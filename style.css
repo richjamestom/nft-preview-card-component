@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 18px;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  line-height: 1.5;
+}
+
+main {
+  padding: 1.8rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 0.5rem;
+  max-width: 400px;
+  /* box-shadow: white -20px -20px, white 10px 10px; */
+}
+body:hover #jules {
+  color: hsl(178, 100%, 50%);
+}
+
+#image-div {
+  position: relative;
+  overflow: hidden;
+  transition: all 5000ms;
+  cursor: pointer;
+}
+
+#image-div:hover #view-div {
+  visibility: visible;
+  border-radius: 0.5rem;
+}
+
+main > div > img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+#view-div {
+  position: absolute;
+  visibility: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(178, 100%, 50%, 0.338);
+}
+
+h1:hover,
+#jules:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+section {
+  display: grid;
+  gap: 1.3rem;
+  margin-top: 1.5rem;
+}
+
+h1 {
+  color: white;
+  font-weight: 600;
+}
+
+#aside-aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 1rem;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#eth-value {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+#avatar-figure {
+  gap: 2rem;
+}
+
+#avatar-figure > img {
+  width: 2rem;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+#jules {
+  color: white;
+}
